@@ -12,7 +12,7 @@ export default function BannerVisibility() {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     observer.observe(reviewsSection);
@@ -26,46 +26,148 @@ export default function BannerVisibility() {
         <div
           style={{
             position: "fixed",
-            left: 0,
+            left: 100,
             top: "50%",
             transform: "translateY(-50%)",
-            background: "linear-gradient(90deg, #dfb722 60%, #b8860b 100%)",
-            color: "#fffbe6",
-            fontWeight: "bold",
-            fontSize: "1.2rem",
-            padding: "0.5rem 2rem",
-            borderRadius: "0.5rem 0 0 0.5rem",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
             zIndex: 10,
-            letterSpacing: "1px",
-            display: 'block',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 'auto',
+            height: 'auto',
           }}
-          id="left-banner"
         >
-          Book Now
+          <a
+            href="/Book"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.7rem',
+              background: 'linear-gradient(90deg, #dfb722 60%, #b8860b 100%)',
+              color: '#222',
+              fontWeight: 600,
+              fontSize: '1.1rem',
+              padding: '0.7rem 1.6rem',
+              borderRadius: '2rem',
+              boxShadow: '0 2px 12px rgba(0,0,0,0.13)',
+              letterSpacing: '0.5px',
+              textDecoration: 'none',
+              transition: 'box-shadow 0.2s, background 0.2s',
+              border: 'none',
+            }}
+            onMouseOver={e => (e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.22)')}
+            onMouseOut={e => (e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.13)')}
+          >
+            <span style={{fontSize: '1.3rem', lineHeight: 1}}>💬</span>
+            Book Us Now
+          </a>
+          <div style={{ position: 'relative', marginTop: '0.18rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div
+              style={{
+                width: 0,
+                height: 0,
+                borderLeft: '10px solid transparent',
+                borderRight: '10px solid transparent',
+                borderTop: '10px solid #232323',
+                marginBottom: '-1px',
+                filter: 'drop-shadow(0 2px 2px rgba(0,0,0,0.15))',
+              }}
+            />
+            <div
+              style={{
+                background: 'linear-gradient(135deg, #232323 80%, #444 100%)',
+                color: '#fffbe6',
+                fontSize: '1rem',
+                fontFamily: 'Segoe UI, Arial, sans-serif',
+                padding: '0.7rem 1.3rem',
+                borderRadius: '1.1rem',
+                boxShadow: '0 4px 18px rgba(0,0,0,0.18)',
+                textAlign: 'center',
+                maxWidth: '240px',
+                lineHeight: 1.5,
+                fontWeight: 400,
+                border: '1.5px solid #3a3a3a',
+                letterSpacing: '0.01em',
+              }}
+            >
+              Check out our instant quote generator and send us a booking request.
+            </div>
+          </div>
         </div>
       )}
       {isVisible && (
         <div
           style={{
             position: "fixed",
-            right: 0,
+            right: 100,
             top: "50%",
             transform: "translateY(-50%)",
-            background: "linear-gradient(90deg, #dfb722 60%, #b8860b 100%)",
-            color: "#fffbe6",
-            fontWeight: "bold",
-            fontSize: "1.2rem",
-            padding: "0.5rem 2rem",
-            borderRadius: "0 0.5rem 0.5rem 0",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
             zIndex: 10,
-            letterSpacing: "1px",
-            display: 'block',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 'auto',
+            height: 'auto',
           }}
-          id="right-banner"
         >
-          Watch Our Videos
+          <a
+            href="/Videos"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.7rem',
+              background: 'linear-gradient(90deg, #dfb722 60%, #b8860b 100%)',
+              color: '#222',
+              fontWeight: 600,
+              fontSize: '1.1rem',
+              padding: '0.7rem 1.6rem',
+              borderRadius: '2rem',
+              boxShadow: '0 2px 12px rgba(0,0,0,0.13)',
+              letterSpacing: '0.5px',
+              textDecoration: 'none',
+              transition: 'box-shadow 0.2s, background 0.2s',
+              border: 'none',
+            }}
+            onMouseOver={e => (e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.22)')}
+            onMouseOut={e => (e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.13)')}
+          >
+            <span style={{fontSize: '1.3rem', lineHeight: 1}}>🎬</span>
+            Watch Our Videos
+          </a>
+          <div style={{ position: 'relative', marginTop: '0.18rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div
+              style={{
+                width: 0,
+                height: 0,
+                borderLeft: '10px solid transparent',
+                borderRight: '10px solid transparent',
+                borderTop: '10px solid #232323',
+                marginBottom: '-1px',
+                filter: 'drop-shadow(0 2px 2px rgba(0,0,0,0.15))',
+              }}
+            />
+            <div
+              style={{
+                background: 'linear-gradient(135deg, #232323 80%, #444 100%)',
+                color: '#fffbe6',
+                fontSize: '1rem',
+                fontFamily: 'Segoe UI, Arial, sans-serif',
+                padding: '0.7rem 1.3rem',
+                borderRadius: '1.1rem',
+                boxShadow: '0 4px 18px rgba(0,0,0,0.18)',
+                textAlign: 'center',
+                maxWidth: '240px',
+                lineHeight: 1.5,
+                fontWeight: 400,
+                border: '1.5px solid #3a3a3a',
+                letterSpacing: '0.01em',
+              }}
+            >
+              See us in action live at various gigs or check out our youtube videos!
+            </div>
+          </div>
         </div>
       )}
     </>
