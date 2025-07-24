@@ -45,7 +45,7 @@ export default function Contact() {
           <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to contact us with any questions. If you would like
             to get a quote for a booking, please use the Booking Form (top right) instead. You can use this if you would like to make a booking without using the quote generator, for example you are outside the UK or need a custom quote.
           </p>
-          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4 border-8" style={{ borderColor: '#dfb722' }}>
             <input
               type="text"
               name="name"

@@ -4,6 +4,7 @@ import BannerVisibility from "./components/bannerVisibility";
 
 
 
+
 export default function Home() {
 
 
@@ -258,6 +259,12 @@ export default function Home() {
           <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.35, marginRight: '1.2rem'}}>&#10022; &#10022; </span>
           <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022; </span>
           <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
+          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
+          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022; </span>
+          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
+          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
         </div>
         {/* Decorative stars right */}
         <div style={{
@@ -304,12 +311,18 @@ export default function Home() {
           <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.35, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
           <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
           <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
+             <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
+          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
         </div>
         {/* Left Banner */}
         {/* Fixed banners only when reviews section is in view */}
       
  
-        <h2 className="text-4xl font-bold mb-4">Some of our reviews:</h2>
+        <h2 className="text-4xl font-bold mb-4">Client Reviews:</h2>
 
         <h3 className="text-2xl font-bold mt-20">Lauren H</h3>
         <p className="max-w-2xl text-xl text-center">
@@ -357,6 +370,45 @@ export default function Home() {
 
           Saw Mr and Mrs Jones on the recent Britannia Cruise and was very impressed. The acoustic playing was sublime, coupled with some beautiful vocals. The perfect music to compliment the ambience of the ship’s atrium. Could kick myself for not picking up a copy of the CD (saw a sign saying it was available, but forgot to follow through!) - but will definitely hunt a copy down.
         </p>
+
+                 <h3 className="text-2xl font-bold mt-20">
+          Gareth L
+
+        </h3>
+        <p className="max-w-2xl text-xl text-center">
+
+          My customers loved it & we would love to have you back again! Sarah you have an amazing voice & Ben, you are an incredibly talented Guitarist!! Thank you for doing the gig, I also know quite a few other landlords in the area & I`m very happy to recommend you to other venues!
+        </p>
+
+             <h3 className="text-2xl font-bold mt-20">
+          Drax Energy Solutions
+
+        </h3>
+        <p className="max-w-2xl text-xl text-center">
+
+          It was a pleasure to have you both at our summer social, we had so much great feedback about how great you guys were which is fab!
+          We would definitely love to have you back at the next event so will keep your details to hand! 
+        </p>
+                   <h3 className="text-2xl font-bold mt-20">
+          Matthew F
+
+        </h3>
+        <p className="max-w-2xl text-xl text-center">
+
+          Stunning vocals and guitar playing and a great range of music. Will definitely be looking out for future performances.
+        </p>
+
+                  <h3 className="text-2xl font-bold mt-20">
+          Lynsey S
+
+        </h3>
+        <p className="max-w-2xl text-xl text-center">
+
+          Sarah and Ben were great and such lovely people too! thank you!
+        </p>
+          
+          
+          
           
       </section>
     </main>

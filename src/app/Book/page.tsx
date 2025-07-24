@@ -180,9 +180,9 @@ export default function Booking() {
         <Navigation />
         <div className="flex flex-col items-center justify-center min-h-[60vh] py-10">
           <h1 className="text-3xl font-bold mb-6 text-white mt-10">Booking Form</h1>
-          <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to generate a quote for a booking. This will send us a quote which we can then accept if we are available. Please note this quote is just an estimate based on 2 x 45 minute sets, and gives you an idea of pricing. We charge extra for background music e.t.c. We may also in some situations charge less than the quote shown. Overnight stays will also have to incur a subcharge not included in the quote. If you would like to book us for potential gigs outside the UK, please contact us instead of using this booking form. We will not hassle or contact you beyond the thread created by this form.
+          <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to generate a quote for a booking. This will send us a quote which we can then accept if we are available. Please note this quote is just an estimate based on 2 x 45 minute sets, and gives you an idea of pricing. We charge extra for background music e.t.c. We may also in some situations charge less than the quote shown. Overnight stays will also have to incur a surcharge not included in the quote. If you would like to book us for potential gigs outside the UK, please contact us instead of using this booking form. We will not hassle or contact you beyond the thread created by this form.
           </p>
-          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4 border-8" style={{ borderColor: '#dfb722' }}>
             <label className="font-semibold">Event Type</label>
             <select
               name="eventType"
