@@ -12,6 +12,8 @@ export interface IBooking extends Document {
   message?: string;
   createdAt?: Date;
   type: BookingType;
+  quote?: string;
+  eventType?: string;
 }
 
 const BookingSchema = new Schema<IBooking>({
@@ -24,6 +26,23 @@ const BookingSchema = new Schema<IBooking>({
     type: String,
     enum: Object.values(BookingType),
     required: true,
+  },
+  quote: {
+    type: String,
+    validate: {
+      validator: function(this: IBooking, v: string | undefined) {
+        if (this.type === BookingType.Booking) {
+          return typeof v === 'string' && v.trim() !== '' && !isNaN(Number(v));
+        }
+        return true;
+      },
+      message: 'Quote is required and must be a number (as a string) when type is Booking.'
+    },
+    required: function(this: IBooking) { return this.type === BookingType.Booking; },
+  },
+  eventType: {
+    type: String,
+    required: function(this: IBooking) { return this.type === BookingType.Booking; },
   },
 });
 

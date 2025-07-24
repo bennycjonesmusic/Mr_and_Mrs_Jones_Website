@@ -42,8 +42,8 @@ export default function Contact() {
         <Navigation />
         <div className="flex flex-col items-center justify-center min-h-[60vh] py-10">
           <h1 className="text-3xl font-bold mb-6 text-white mt-10">Contact Us</h1>
-          <p className="text-xl text-white mb-8 max-w-md">Please use this form to contact us with any questions. If you would like
-            to get a quote for a booking, please use the Booking Form (top right) instead.
+          <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to contact us with any questions. If you would like
+            to get a quote for a booking, please use the Booking Form (top right) instead. You can use this if you would like to make a booking without using the quote generator, for example you are outside the UK or need a custom quote.
           </p>
           <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4">
             <input

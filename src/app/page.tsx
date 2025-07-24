@@ -23,6 +23,134 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
+        <div
+          className="absolute p-6 z-10 top-10 left-0"
+          style={{
+            fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
+            letterSpacing: '0.03em',
+            textShadow: "0 2px 12px #000, 0 0px 2px #000",
+            background: 'rgba(0,0,0,0.18)',
+            borderRadius: '1.2rem',
+            maxWidth: '90vw',
+            boxShadow: '0 2px 16px 0 rgba(0,0,0,0.18)',
+          }}
+        >
+          <span
+            style={{
+              fontSize: '2.7rem',
+              fontWeight: 700,
+              color: '#fff',
+              display: 'block',
+              lineHeight: 1.1,
+              marginBottom: '0.3em',
+              letterSpacing: '0.04em',
+              textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
+              filter: 'drop-shadow(0 0 6px #dfb722)',
+            }}
+          >
+            Suffolk Based Act
+          </span>
+          <span
+            style={{
+              fontSize: '1.45rem',
+              fontWeight: 500,
+              color: '#fffbe6',
+              textShadow: '0 0 6px #b8860b, 0 2px 8px #000',
+              display: 'block',
+              marginBottom: '0.1em',
+              letterSpacing: '0.02em',
+            }}
+          >
+            Two Guitars, Two Voices
+          </span>
+          <span
+            style={{
+              fontSize: '1.45rem',
+              fontWeight: 400,
+              color: '#fffbe6',
+              textShadow: '0 0 6px #b8860b, 0 2px 8px #000',
+              display: 'block',
+              letterSpacing: '0.01em',
+            }}
+          >
+            No Backing Tracks, Just Live Music
+          </span>
+        </div>
+
+     <div
+          className="absolute z-10 top-15 right-45"
+          style={{
+            fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
+            letterSpacing: '0.03em',
+            textShadow: "0 2px 12px #000, 0 0px 2px #000",
+            background: 'none',
+            border: 'none',
+            borderRadius: 0,
+            maxWidth: '90vw',
+            boxShadow: 'none',
+            padding: 0,
+          }}
+        >
+        <span style={{
+             fontSize: '2.1rem',
+              fontWeight: 700,
+              color: '#fff',
+              display: 'block',
+              lineHeight: 1.1,
+              marginBottom: '0.3em',
+              letterSpacing: '0.04em',
+              textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
+              filter: 'drop-shadow(0 0 6px #dfb722)',
+        }}>#Country</span>
+        <span style={{
+          fontSize: '2.1rem',
+              fontWeight: 700,
+              color: '#fff',
+              display: 'block',
+              lineHeight: 1.1,
+              marginBottom: '0.3em',
+              letterSpacing: '0.04em',
+              textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
+              filter: 'drop-shadow(0 0 6px #dfb722)',
+        }}>#Pop</span>
+        <span style={{
+          fontSize: '2.1rem',
+              fontWeight: 700,
+              color: '#fff',
+              display: 'block',
+              lineHeight: 1.1,
+              marginBottom: '0.3em',
+              letterSpacing: '0.04em',
+              textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
+              filter: 'drop-shadow(0 0 6px #dfb722)',
+        }}>#Folk</span>
+        <span style={{
+          fontSize: '2.1rem',
+              fontWeight: 700,
+              color: '#fff',
+              display: 'block',
+              lineHeight: 1.1,
+              marginBottom: '0.3em',
+              letterSpacing: '0.04em',
+              textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
+              filter: 'drop-shadow(0 0 6px #dfb722)',
+        }}>#Acoustic</span>
+        <span style={{
+          fontSize: '2.1rem',
+              fontWeight: 700,
+              color: '#fff',
+              display: 'block',
+              lineHeight: 1.1,
+              marginBottom: '0.3em',
+              letterSpacing: '0.04em',
+              textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
+              filter: 'drop-shadow(0 0 6px #dfb722)',
+        }}>#Harmonies</span>
+
+
+
+
+        </div>
         {/* Overlay for heading legibility */}
         <div
           style={{
