@@ -412,6 +412,9 @@ export default function Home() {
           
       </section>
     </main>
+       <footer className="bg-black text-white p-4 text-center">
+                <p>&copy; {new Date().getFullYear()} Sarah and Ben Duo. All rights reserved. Photography by Andy Ingram</p>
+            </footer>
     </>
   );
 }

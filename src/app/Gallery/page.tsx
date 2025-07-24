@@ -24,7 +24,7 @@ export default function Gallery() {
                 <GalleryComponent images={images} />
             </main>
             <footer className="bg-black text-white p-4 text-center">
-                <p>&copy; {new Date().getFullYear()} Sarah and Ben Duo. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Sarah and Ben Duo. All rights reserved. Photography by Andy Ingram Photography and Videography and Mark Holmes Photography</p>
             </footer>
         </>
     );

@@ -60,7 +60,13 @@ export function Navigation() {
             <Link href="/Book" className="text-white hover:text-gray-300">
               Booking Form
             </Link>
-          </li>
+            </li>
+            <li>
+            <Link href="/#reviews-section" className="text-white hover:text-gray-300">
+              Reviews
+            </Link>
+             </li>
+        
         </ul>
       </div>
     </nav>
