@@ -1,33 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, Dancing_Script, Great_Vibes } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-});
-
-const dancingScript = Dancing_Script({
-  variable: "--font-dancing-script",
-  subsets: ["latin"],
-});
-
-const greatVibes = Great_Vibes({
-  variable: "--font-great-vibes",
-  subsets: ["latin"],
-  weight: "400",
-});
-
 
 export const metadata: Metadata = {
   title: {
@@ -47,13 +18,6 @@ export const metadata: Metadata = {
     "Sarah and Ben Duo",
     "live acoustic music"
   ],
-  alternates: {
-    canonical: "https://sarahandbenduo.com"
-  },
-  themeColor: "#dfb722",
-  robots: "index, follow",
-  authors: [{ name: "Sarah and Ben Duo", url: "https://sarahandbenduo.com" }],
-  publisher: "Sarah and Ben Duo",
   openGraph: {
     title: "Sarah and Ben Duo | Suffolk Based Live Music",
     description:
@@ -79,23 +43,6 @@ export const metadata: Metadata = {
     images: ["/promo_new.jpg"]
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png"
+    icon: "/favicon.ico"
   }
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${dancingScript.variable} ${greatVibes.variable} antialiased bg-black`}
-      >
-        {children}
-      </body>
-    </html>
-  );
-}

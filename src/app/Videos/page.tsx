@@ -5,18 +5,18 @@ import { Navigation } from "../components/Navigation";
 const videos = [
   {
     id: "1",
-    url: "https://www.youtube.com/embed/VIDEO_ID_1",
-    title: "Performance 1"
+    url: "https://www.youtube.com/embed/ZOFBq6RJAi8",
+    title: "Country Promo Video"
   },
   {
     id: "2",
-    url: "https://www.youtube.com/embed/VIDEO_ID_2",
-    title: "Performance 2"
+    url: "https://www.youtube.com/embed/46B919K8Ae4",
+    title: "Annies Song Cover"
   },
   {
     id: "3",
-    url: "https://www.youtube.com/embed/VIDEO_ID_3",
-    title: "Performance 3"
+    url: "https://www.youtube.com/embed/-llN8-U_57E?si=ir5dN6-PCgvFg-Ts",
+    title: "Top Of The World Cover"
   }
 ];
 
@@ -31,7 +31,7 @@ export default function Videos() {
       <Navigation />
       <main className="flex flex-col items-center justify-center min-h-screen bg-black">
         <h1 className="text-4xl font-bold mb-8 text-white">Videos</h1>
-        <p className="text-lg mb-4 text-white">Check out our latest performances and music videos below!</p>
+        <p className="text-lg mb-4 text-white max-w-4xl">Check out our latest performances and music videos below! To see more videos including footage taken at gigs, please check out our Instagram and Facebook pages. The links for those pages are on the top right.</p>
         <div className="flex items-center justify-center gap-8 w-full">
           <button
             onClick={prevVideo}
