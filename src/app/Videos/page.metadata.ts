@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Videos | Sarah and Ben Duo",
+  title: "Videos | Mr and Mrs Jones Duo",
   description: "Watch our latest performances and music videos. Acoustic duo for weddings, parties, and events in Suffolk and beyond.",
   keywords: [
     "music videos",
@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     "country duo"
   ],
   openGraph: {
-    title: "Videos | Sarah and Ben Duo",
+    title: "Videos | Mr and Mrs Jones Duo",
     description: "Watch our latest performances and music videos.",
     images: ["/promo_new.jpg"]
   },
   alternates: {
-    canonical: "https://sarahandbenduo.com/Videos"
+    canonical: "https://mrandmrsjonesduo.co.uk/Videos"
   }
 };

@@ -31,8 +31,8 @@ const greatVibes = Great_Vibes({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sarah and Ben Duo | Suffolk Based Live Music",
-    template: "%s | Sarah and Ben Duo"
+    default: "Mr and Mrs Jones Duo | Suffolk Based Live Music",
+    template: "%s | Mr and Mrs Jones Duo"
   },
   description:
     "Live acoustic duo for weddings, parties, and events in Suffolk and beyond. Two guitars, two voices, no backing tracks. Book an acoustic duo for your event.",
@@ -44,28 +44,29 @@ export const metadata: Metadata = {
     "live music suffolk",
     "wedding music suffolk",
     "party music suffolk",
+    "Mr and Mrs Jones Duo",
     "Sarah and Ben Duo",
     "live acoustic music"
   ],
   alternates: {
-    canonical: "https://sarahandbenduo.com"
+    canonical: "https://mrandmrsjonesduo.co.uk"
   },
   themeColor: "#dfb722",
   robots: "index, follow",
-  authors: [{ name: "Sarah and Ben Duo", url: "https://sarahandbenduo.com" }],
-  publisher: "Sarah and Ben Duo",
+  authors: [{ name: "Mr and Mrs Jones Duo", url: "https://mrandmrsjonesduo.co.uk" }],
+  publisher: "Mr and Mrs Jones Duo",
   openGraph: {
-    title: "Sarah and Ben Duo | Suffolk Based Live Music",
+    title: "Mr and Mrs Jones Duo | Suffolk Based Live Music",
     description:
       "Live acoustic duo for weddings, parties, and events in Suffolk and beyond. Two guitars, two voices, no backing tracks.",
-    url: "https://sarahandbenduo.com",
-    siteName: "Sarah and Ben Duo",
+    url: "https://mrandmrsjonesduo.co.uk",
+    siteName: "Mr and Mrs Jones Duo",
     images: [
       {
         url: "/promo_new.jpg",
         width: 1200,
         height: 630,
-        alt: "Sarah and Ben Duo Promo"
+        alt: "Mr and Mrs Jones Duo Promo"
       }
     ],
     locale: "en_GB",
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sarah and Ben Duo | Suffolk Based Live Music",
+    title: "Mr and Mrs Jones Duo | Suffolk Based Live Music",
     description:
       "Live acoustic duo for weddings, parties, and events in Suffolk and beyond. Two guitars, two voices, no backing tracks.",
     images: ["/promo_new.jpg"]
