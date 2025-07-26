@@ -1,3 +1,9 @@
+import mongoose from 'mongoose';
+// Ensure mongoose is connected
+const MONGODB_URI = process.env.DATABASE_URL as string;
+if (!mongoose.connection.readyState) {
+  mongoose.connect(MONGODB_URI, { dbName: undefined });
+}
 // Helper to get Website doc (singleton)
 async function getWebsiteDoc() {
   let website = await Website.findOne();
@@ -47,17 +53,15 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({ error: 'Invalid type' }, { status: 400 });
 }
 import { NextResponse } from 'next/server';
-import { IPAddress } from '@/app/models/Website';
-import { model } from 'mongoose';
-import { IWebsite } from '@/app/models/Website';
-
-// Use mongoose.model to get Website if not exported
-const Website = model<IWebsite>('Website');
+import { IPAddress, Website } from '@/app/models/Website';
 
 // GET: Returns total, unique, and today's views
 export async function GET() {
   try {
-    const website = await Website.findOne();
+    let website = await Website.findOne();
+    if (!website) {
+      website = await Website.create({ totalViews: '0', uniqueViews: '0', viewsToday: '0' });
+    }
     const uniqueViews = await IPAddress.countDocuments();
     const viewsToday = website?.viewsToday || 0;
     const totalViews = website?.totalViews || 0;

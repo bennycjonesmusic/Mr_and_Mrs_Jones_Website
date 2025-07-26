@@ -1,43 +1,44 @@
+
 import Image from "next/image";
 import { Navigation } from "./components/Navigation";
 import BannerVisibility from "./components/bannerVisibility";
+
+import AnalyticsUpdaterWrapper from "./components/AnalyticsUpdaterWrapper";
 
 
 
 
 export default function Home() {
-
-
   return (
     <>
+      <AnalyticsUpdaterWrapper />
       <BannerVisibility />
-
-    <main className="bg-black w-full relative">
-      <Navigation />
-      <section
-        className="w-full px-0 relative"
-        style={{
-          height: "100vh",
-          backgroundImage: "url('/promo_new.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center top -20px",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div
-          className="absolute p-6 z-10 top-10 left-0"
+      <main className="bg-black w-full relative">
+        <Navigation />
+        <section
+          className="w-full px-0 relative"
           style={{
-            fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
-            letterSpacing: '0.03em',
-            textShadow: "0 2px 12px #000, 0 0px 2px #000",
-            background: 'rgba(0,0,0,0.18)',
-            borderRadius: '1.2rem',
-            maxWidth: '90vw',
-            boxShadow: '0 2px 16px 0 rgba(0,0,0,0.18)',
+            height: "100vh",
+            backgroundImage: "url('/promo_new.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center top -20px",
+            backgroundRepeat: "no-repeat",
           }}
         >
-          <span
+          <div
+            className="absolute p-6 z-10 top-10 left-0"
             style={{
+              fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
+              letterSpacing: '0.03em',
+              textShadow: "0 2px 12px #000, 0 0px 2px #000",
+              background: 'rgba(0,0,0,0.18)',
+              borderRadius: '1.2rem',
+              maxWidth: '90vw',
+              boxShadow: '0 2px 16px 0 rgba(0,0,0,0.18)',
+            }}
+          >
+            <span
+              style={{
               fontSize: '2.7rem',
               fontWeight: 700,
               color: '#fff',
@@ -413,7 +414,7 @@ export default function Home() {
       </section>
     </main>
        <footer className="bg-black text-white p-4 text-center">
-                <p>&copy; {new Date().getFullYear()} Sarah and Ben Duo. All rights reserved. Photography by Andy Ingram</p>
+                <p>&copy; {new Date().getFullYear()} Mr and Mrs Jones Duo. All rights reserved. Photography by Andy Ingram</p>
             </footer>
     </>
   );

@@ -21,7 +21,7 @@ const ipAddressSchema = new Schema<IIPAddress>({
 ipAddressSchema.index({ firstSeen: 1 }, { expireAfterSeconds: 60 * 60 * 24 * 30 });
 
 
-export const IPAddress = model<IIPAddress>('IPAddress', ipAddressSchema);
+export const IPAddress = mongoose.models.IPAddress || model<IIPAddress>('IPAddress', ipAddressSchema);
 
 
 
@@ -31,4 +31,6 @@ const websiteSchema = new Schema<IWebsite>({
   viewsToday: { type: String },
   lastDailyReset: { type: Number },
 });
+
+export const Website = mongoose.models.Website || model<IWebsite>('Website', websiteSchema);
 

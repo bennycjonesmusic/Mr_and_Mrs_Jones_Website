@@ -1,6 +1,8 @@
 import { Navigation } from "../components/Navigation";
 import { GalleryComponent } from "../components/GalleryComponent";
 
+import AnalyticsUpdaterWrapper from "../components/AnalyticsUpdaterWrapper";
+
 export default function Gallery() {
     const images = [
         "/gallery/img1.jpg",
@@ -19,6 +21,7 @@ export default function Gallery() {
 
     return (
         <>
+      <AnalyticsUpdaterWrapper />
             <Navigation />
             <main>
                 <GalleryComponent images={images} />
