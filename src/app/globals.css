@@ -1,3 +1,77 @@
+@media (max-width: 600px) {
+  .homepage-hero-genres {
+    position: static !important;
+    margin-top: 0.5em !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.2em !important;
+    z-index: 20 !important;
+  }
+  .homepage-hero-tag {
+    display: inline-block !important;
+    margin-right: 0.3em !important;
+    margin-bottom: 0.2em !important;
+  }
+}
+@media (max-width: 600px) {
+  .homepage-hero-text-container {
+    margin-top: 3.5em !important; /* increase if needed */
+    padding-top: 1.5em !important;
+    z-index: 20 !important;
+    background: rgba(0,0,0,0.7) !important;
+  }
+}
+@media (max-width: 600px) {
+  .homepage-hero-text-container {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    background: rgba(0,0,0,0.55) !important;
+    padding: 1.2em 1em 1em 1em !important;
+    margin: 0.5em 0 0.5em 0 !important;
+    border-radius: 1em !important;
+    max-width: 98vw !important;
+    z-index: 10 !important;
+  }
+  .homepage-hero-title,
+  .homepage-hero-sub,
+  .homepage-hero-tag {
+    width: 100% !important;
+    text-align: left !important;
+    word-break: break-word !important;
+  }
+}
+@media (max-width: 600px) {
+  .homepage-hero-title {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.15em !important;
+  }
+  .homepage-hero-sub {
+    font-size: 1.05rem !important;
+    margin-bottom: 0.05em !important;
+  }
+  .homepage-hero-tag {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.1em !important;
+  }
+  .homepage-hero-h1 {
+    font-size: 2.2rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .homepage-hero-title { font-size: 1.5rem !important; }
+  .homepage-hero-sub { font-size: 1rem !important; }
+  .homepage-hero-tag { font-size: 1.1rem !important; }
+  .homepage-hero-h1 { font-size: 1.8rem !important; }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .homepage-hero-title { font-size: 1.5rem !important; }
+  .homepage-hero-sub { font-size: 1rem !important; }
+  .homepage-hero-tag { font-size: 1.1rem !important; }
+  .homepage-hero-h1 { font-size: 2.8rem !important; }
+}
 @import "tailwindcss";
 
 :root {

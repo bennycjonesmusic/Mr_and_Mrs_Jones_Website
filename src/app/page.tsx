@@ -26,7 +26,7 @@ export default function Home() {
           }}
         >
           <div
-            className="absolute p-6 z-10 top-10 left-0"
+            className="absolute md:p-6 z-10 top-15 right-0 md:top-10 md:left-0 z-30"
             style={{
               fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
               letterSpacing: '0.03em',
@@ -37,7 +37,7 @@ export default function Home() {
               boxShadow: '0 2px 16px 0 rgba(0,0,0,0.18)',
             }}
           >
-            <span
+            <span className="homepage-hero-title"
               style={{
               fontSize: '2.7rem',
               fontWeight: 700,
@@ -52,7 +52,7 @@ export default function Home() {
           >
             Suffolk Based Act
           </span>
-          <span
+          <span className="homepage-hero-sub"
             style={{
               fontSize: '1.45rem',
               fontWeight: 500,
@@ -65,7 +65,7 @@ export default function Home() {
           >
             Two Guitars, Two Voices
           </span>
-          <span
+          <span className="homepage-hero-sub"
             style={{
               fontSize: '1.45rem',
               fontWeight: 400,
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
 
      <div
-          className="absolute z-10 top-15 right-45"
+          className="homepage-hero-genres absolute z-10 top-15 right-45"
           style={{
             fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
             letterSpacing: '0.03em',
@@ -93,7 +93,7 @@ export default function Home() {
             padding: 0,
           }}
         >
-        <span style={{
+        <span className="homepage-hero-tag" style={{
              fontSize: '2.1rem',
               fontWeight: 700,
               color: '#fff',
@@ -104,7 +104,7 @@ export default function Home() {
               textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
               filter: 'drop-shadow(0 0 6px #dfb722)',
         }}>#Country</span>
-        <span style={{
+        <span className="homepage-hero-tag" style={{
           fontSize: '2.1rem',
               fontWeight: 700,
               color: '#fff',
@@ -115,7 +115,7 @@ export default function Home() {
               textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
               filter: 'drop-shadow(0 0 6px #dfb722)',
         }}>#Pop</span>
-        <span style={{
+        <span className="homepage-hero-tag" style={{
           fontSize: '2.1rem',
               fontWeight: 700,
               color: '#fff',
@@ -126,7 +126,7 @@ export default function Home() {
               textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
               filter: 'drop-shadow(0 0 6px #dfb722)',
         }}>#Folk</span>
-        <span style={{
+        <span className="homepage-hero-tag" style={{
           fontSize: '2.1rem',
               fontWeight: 700,
               color: '#fff',
@@ -137,7 +137,7 @@ export default function Home() {
               textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
               filter: 'drop-shadow(0 0 6px #dfb722)',
         }}>#Acoustic</span>
-        <span style={{
+        <span className="homepage-hero-tag" style={{
           fontSize: '2.1rem',
               fontWeight: 700,
               color: '#fff',
@@ -179,7 +179,7 @@ export default function Home() {
           }}
         />
         <h1
-          className="text-7xl text-center font-[var(--font-great-vibes)] absolute w-full"
+          className="homepage-hero-h1 md:text-7xl text-center font-[var(--font-great-vibes)] absolute w-full"
           style={{
             fontFamily: "var(--font-great-vibes)",
             background: "linear-gradient(90deg, #dfb722 5%, #dfb722 30%, #b8860b 50%, #dfb722 70%, #b8860b 95%)",
