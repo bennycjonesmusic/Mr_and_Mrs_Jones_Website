@@ -1,76 +1,120 @@
 @media (max-width: 600px) {
+  .reviews-stars-left .shiny-star {
+    margin-left: 0 !important;
+  
+  }
+  .reviews-stars-right .shiny-star {
+    margin-right: 0 !important;
+   
+  }
+}
+@media (min-width: 601px) {
+  .reviews-stars-left {
+    gap: 2.2rem !important;
+  }
+  .reviews-stars-right {
+    gap: 2.2rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Force equal margin on both sides for mobile, override any inline or conflicting styles */
+  .reviews-stars-left {
+    top: 40px !important;
+    left: 1px !important;
+    height: 80vh !important;
+    gap: 4rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Force equal margin on both sides for mobile, override any inline or conflicting styles */
+  .reviews-stars-right {
+    top: 40px !important;
+    right: 1px !important;
+    height: 80vh !important;
+    gap: 4rem !important;
+  }
+}
+@media (max-width: 600px) {
+  #reviews-section h2,
+  #reviews-section h3,
+  #reviews-section p {
+    font-size: 0.9em !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .shiny-star {
+    font-size: 1.1rem !important;
+  }
+}
+@media (max-width: 600px) {
+  #reviews-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 601px) {
+  #reviews-section {
+    padding-left: 6em;
+    padding-right: 6rem;
+  }
+}
+@media (min-width: 600px) {
+  .homepage-hero-section {
+    height: 100vh;
+    background-image: url('/promo_new.jpg');
+    background-size: cover;
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  .homepage-hero-section {
+    height: 100vh;
+    background-image: url('/promo_new.jpg');
+    background-size: cover;
+    background-position: 46% -10px;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
   .homepage-hero-genres {
-    position: static !important;
-    margin-top: 0.5em !important;
+
+
     width: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
+ 
     gap: 0.2em !important;
     z-index: 20 !important;
+     padding-top:3em !important;
   }
   .homepage-hero-tag {
-    display: inline-block !important;
+  
     margin-right: 0.3em !important;
     margin-bottom: 0.2em !important;
+    margin-top:1em !important;
+  
   }
 }
-@media (max-width: 600px) {
-  .homepage-hero-text-container {
-    margin-top: 3.5em !important; /* increase if needed */
-    padding-top: 1.5em !important;
-    z-index: 20 !important;
-    background: rgba(0,0,0,0.7) !important;
-  }
-}
-@media (max-width: 600px) {
-  .homepage-hero-text-container {
-    position: static !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    background: rgba(0,0,0,0.55) !important;
-    padding: 1.2em 1em 1em 1em !important;
-    margin: 0.5em 0 0.5em 0 !important;
-    border-radius: 1em !important;
-    max-width: 98vw !important;
-    z-index: 10 !important;
-  }
-  .homepage-hero-title,
-  .homepage-hero-sub,
-  .homepage-hero-tag {
-    width: 100% !important;
-    text-align: left !important;
-    word-break: break-word !important;
-  }
-}
-@media (max-width: 600px) {
-  .homepage-hero-title {
-    font-size: 1.3rem !important;
-    margin-bottom: 0.15em !important;
-  }
-  .homepage-hero-sub {
-    font-size: 1.05rem !important;
-    margin-bottom: 0.05em !important;
-  }
-  .homepage-hero-tag {
-    font-size: 1.1rem !important;
-    margin-bottom: 0.1em !important;
-  }
-  .homepage-hero-h1 {
-    font-size: 2.2rem !important;
-  }
-}
-@media (max-width: 600px) {
-  .homepage-hero-title { font-size: 1.5rem !important; }
-  .homepage-hero-sub { font-size: 1rem !important; }
-  .homepage-hero-tag { font-size: 1.1rem !important; }
-  .homepage-hero-h1 { font-size: 1.8rem !important; }
-}
+
+
+
+
+
 @media (min-width: 600px) and (max-width: 1000px) {
+  .homepage-hero-title { font-size: 1.8rem !important; }
+  .homepage-hero-sub { font-size: 1.3rem !important; }
+  .homepage-hero-tag { font-size: 1.5rem !important; }
+  .homepage-hero-h1 { font-size: 7vw !important; }
+}
+@media (min-width: 300px) and (max-width: 600px) {
   .homepage-hero-title { font-size: 1.5rem !important; }
   .homepage-hero-sub { font-size: 1rem !important; }
   .homepage-hero-tag { font-size: 1.1rem !important; }
-  .homepage-hero-h1 { font-size: 2.8rem !important; }
+  .homepage-hero-h1 { font-size: 7vw !important; }
 }
 @import "tailwindcss";
 

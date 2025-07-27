@@ -3,10 +3,20 @@ import { useState, useEffect } from "react";
 
 export default function BannerVisibility() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isNarrow, setIsNarrow] = useState(false);
 
   useEffect(() => {
+    // Hide banners if screen width is less than 1500px
+    const checkNarrow = () => {
+      if (typeof window !== 'undefined') {
+        setIsNarrow(window.innerWidth < 1500);
+      }
+    };
+    checkNarrow();
+    window.addEventListener('resize', checkNarrow);
+
     const reviewsSection = document.getElementById("reviews-section");
-    if (!reviewsSection) return;
+    if (!reviewsSection) return () => window.removeEventListener('resize', checkNarrow);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -17,8 +27,14 @@ export default function BannerVisibility() {
 
     observer.observe(reviewsSection);
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', checkNarrow);
+    };
   }, []);
+
+  // Only show banners if screen is at least 1500px wide
+  if (isNarrow) return null;
 
   return (
     <>

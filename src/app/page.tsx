@@ -16,17 +16,10 @@ export default function Home() {
       <main className="bg-black w-full relative">
         <Navigation />
         <section
-          className="w-full px-0 relative"
-          style={{
-            height: "100vh",
-            backgroundImage: "url('/promo_new.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center top -20px",
-            backgroundRepeat: "no-repeat",
-          }}
+          className="w-full px-0 relative homepage-hero-section"
         >
           <div
-            className="absolute md:p-6 z-10 top-15 right-0 md:top-10 md:left-0 z-30"
+            className="homepage-hero-text-container absolute md:p-6 z-10 bottom-20 left-2 md:top-10 md:left-0 z-30"
             style={{
               fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
               letterSpacing: '0.03em',
@@ -80,7 +73,7 @@ export default function Home() {
         </div>
 
      <div
-          className="homepage-hero-genres absolute z-10 top-15 right-45"
+          className="homepage-hero-genres absolute z-10 md:top-15 md:right-0 lg:top-15 lg:right-0 xl:top-15 xl:right-45"
           style={{
             fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
             letterSpacing: '0.03em',
@@ -166,13 +159,12 @@ export default function Home() {
           }}
         />
         {/* Gradient fade to black at bottom for smooth blend */}
-        <div
+        <div className="h-[40rem] md:h-[6rem]"
           style={{
             position: "absolute",
             left: 0,
             right: 0,
             bottom: 0,
-            height: "4rem",
             background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 100%)",
             zIndex: 2,
             pointerEvents: "none"
@@ -217,14 +209,12 @@ export default function Home() {
             filter: drop-shadow(0 0 2px #fffbe6) drop-shadow(0 0 4px #dfb722);
           }
         `}</style>
-        <div style={{
+        <div className="reviews-stars-left" style={{
           position: 'absolute',
-          left: 0,
-          top: '2rem',
+          left: '1rem',
           bottom: 0,
           display: 'flex',
           flexDirection: 'column',
-          gap: '2.2rem',
           zIndex: 1,
           pointerEvents: 'none',
         }}>
@@ -268,17 +258,15 @@ export default function Home() {
           <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
         </div>
         {/* Decorative stars right */}
-        <div style={{
+        <div className="reviews-stars-right" style={{
           position: 'absolute',
-          right: 0,
-          top: '4rem',
+          right: '1rem',
           bottom: 0,
           display: 'flex',
           flexDirection: 'column',
-          gap: '2.2rem',
           zIndex: 1,
           alignItems: 'flex-end',
-          pointerEvents: 'none',
+          pointerEvents: 'none'
         }}>
           <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.7, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
           <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.85, marginRight: '0.5rem'}}>&#10022; &#10022;</span>
