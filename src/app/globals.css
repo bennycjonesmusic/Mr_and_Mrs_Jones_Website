@@ -1,3 +1,22 @@
+/* Move genres down when nav brand is visible (hamburger menu shown) */
+@media (min-width: 601px) {
+.nav-brand-visible .homepage-hero-genres {
+  top: 7rem !important;
+  right: 1rem !important;
+}
+
+.nav-brand-visible  .homepage-hero-section {
+
+bottom: 0 !important;
+
+
+
+}
+}
+/* Hide homepage bottom brand when nav brand is visible */
+.nav-brand-visible .homepage-bottom-brand {
+  display: none !important;
+}
 @media (max-width: 600px) {
   .reviews-stars-left .shiny-star {
     margin-left: 0 !important;
@@ -105,14 +124,14 @@
 
 
 @media (min-width: 600px) and (max-width: 1000px) {
-  .homepage-hero-title { font-size: 1.8rem !important; }
-  .homepage-hero-sub { font-size: 1.3rem !important; }
-  .homepage-hero-tag { font-size: 1.5rem !important; }
+  .homepage-hero-title { font-size: 2rem !important; }
+  .homepage-hero-sub { font-size: 1.5rem !important; }
+  .homepage-hero-tag { font-size: 1.7rem !important; }
   .homepage-hero-h1 { font-size: 7vw !important; }
 }
 @media (min-width: 300px) and (max-width: 600px) {
-  .homepage-hero-title { font-size: 1.5rem !important; }
-  .homepage-hero-sub { font-size: 1rem !important; }
+  .homepage-hero-title { font-size: 1.7rem !important; }
+  .homepage-hero-sub { font-size: 1.2rem !important; }
   .homepage-hero-tag { font-size: 1.1rem !important; }
   .homepage-hero-h1 { font-size: 7vw !important; }
 }

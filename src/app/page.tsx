@@ -19,7 +19,7 @@ export default function Home() {
           className="w-full px-0 relative homepage-hero-section"
         >
           <div
-            className="homepage-hero-text-container absolute md:p-6 z-10 bottom-20 left-2 md:top-10 md:left-0 z-30"
+            className="homepage-hero-text-container absolute md:p-6 z-10 bottom-2 left-2 xl:top-10 xl:left-0 z-30"
             style={{
               fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
               letterSpacing: '0.03em',
@@ -171,7 +171,7 @@ export default function Home() {
           }}
         />
         <h1
-          className="homepage-hero-h1 md:text-7xl text-center font-[var(--font-great-vibes)] absolute w-full"
+          className="homepage-hero-h1 md:text-7xl text-center font-[var(--font-great-vibes)] absolute w-full homepage-bottom-brand"
           style={{
             fontFamily: "var(--font-great-vibes)",
             background: "linear-gradient(90deg, #dfb722 5%, #dfb722 30%, #b8860b 50%, #dfb722 70%, #b8860b 95%)",
