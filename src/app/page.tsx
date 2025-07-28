@@ -5,6 +5,9 @@ import BannerVisibility from "./components/bannerVisibility";
 
 import AnalyticsUpdaterWrapper from "./components/AnalyticsUpdaterWrapper";
 
+import ReviewsStarsLeft from "./components/ReviewsStarsLeft";
+import ReviewsStarsRight from "./components/ReviewsStarsRight";
+
 
 
 
@@ -19,7 +22,7 @@ export default function Home() {
           className="w-full px-0 relative homepage-hero-section"
         >
           <div
-            className="homepage-hero-text-container absolute md:p-6 z-10 bottom-2 left-2 xl:top-10 xl:left-0 z-30"
+            className="homepage-hero-text-container absolute md:p-6 z-10 bottom-2 left-2 lg:top-10 xl:left-0 z-30"
             style={{
               fontFamily: "'Playfair Display', Georgia, 'Times New Roman', Times, serif",
               letterSpacing: '0.03em',
@@ -192,121 +195,8 @@ export default function Home() {
       </section>
       {/* Second section below hero */}
       <section className="w-full py-16 bg-black text-white flex flex-col items-center relative" id="reviews-section">
-        {/* Decorative stars left */}
-        <style>{`
-          @keyframes shine {
-            0% { background-position: -120% 0; }
-            100% { background-position: 220% 0; }
-          }
-          .shiny-star {
-            background: linear-gradient(90deg, #fffbe6 0%, #dfb722 30%, #fffbe6 50%, #b8860b 70%, #dfb722 100%);
-            background-size: 200% 100%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            animation: shine 2.5s linear infinite;
-            filter: drop-shadow(0 0 2px #fffbe6) drop-shadow(0 0 4px #dfb722);
-          }
-        `}</style>
-        <div className="reviews-stars-left" style={{
-          position: 'absolute',
-          left: '1rem',
-          bottom: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          zIndex: 1,
-          pointerEvents: 'none',
-        }}>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.85, marginLeft: '0.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.7, marginLeft: '1.2rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.8rem', opacity: 0.6, marginLeft: '0.8rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.5, marginLeft: '1.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.85, marginLeft: '1.2rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.6rem', opacity: 0.45, marginLeft: '0.7rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.55, marginLeft: '1.1rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.35, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.1rem', opacity: 0.75, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.4rem', opacity: 0.4, marginLeft: '1.3rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.5, marginLeft: '0.6rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.0rem', opacity: 0.6, marginLeft: '1.4rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.1rem', opacity: 0.3, marginLeft: '1.7rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginLeft: '0.7rem'}}>&#10022; &#10022;  </span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginLeft: '1.1rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.8rem', opacity: 0.4, marginLeft: '1.3rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.7, marginLeft: '0.8rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.3, marginLeft: '1.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.5, marginLeft: '1.1rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.35, marginLeft: '1.2rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.8rem', opacity: 0.4, marginRight: '1.3rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.7, marginRight: '0.8rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.3, marginRight: '1.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.5, marginRight: '1.1rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.35, marginRight: '1.2rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
-        </div>
-        {/* Decorative stars right */}
-        <div className="reviews-stars-right" style={{
-          position: 'absolute',
-          right: '1rem',
-          bottom: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          zIndex: 1,
-          alignItems: 'flex-end',
-          pointerEvents: 'none'
-        }}>
-          <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.7, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.85, marginRight: '0.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.5, marginRight: '1.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.6, marginRight: '0.8rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.85, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.6rem', opacity: 0.45, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.55, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.35, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.1rem', opacity: 0.75, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.4rem', opacity: 0.4, marginRight: '1.3rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.5, marginRight: '0.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.0rem', opacity: 0.6, marginRight: '1.4rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.1rem', opacity: 0.3, marginRight: '1.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.8rem', opacity: 0.4, marginRight: '1.3rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.7, marginRight: '0.8rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.3, marginRight: '1.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.5, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.35, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.8rem', opacity: 0.4, marginRight: '1.3rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.7, marginRight: '0.8rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.3, marginRight: '1.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.5, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.35, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-             <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.7, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.4rem', opacity: 0.8, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.45, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-        </div>
+        <ReviewsStarsLeft />
+        <ReviewsStarsRight />
         {/* Left Banner */}
         {/* Fixed banners only when reviews section is in view */}
       
@@ -401,8 +291,8 @@ export default function Home() {
           
       </section>
     </main>
-       <footer className="bg-black text-white p-4 text-center">
-                <p>&copy; {new Date().getFullYear()} Mr and Mrs Jones Duo. All rights reserved. Photography by Andy Ingram</p>
+       <footer className="bg-black text-white p-4 text-center bottom-0" id="footer">
+                <p id="footer-text">&copy; {new Date().getFullYear()} Mr and Mrs Jones Duo. All rights reserved. Photography by Andy Ingram</p>
             </footer>
     </>
   );
