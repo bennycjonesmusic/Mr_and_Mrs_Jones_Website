@@ -1,5 +1,7 @@
 'use client';
 import { Navigation } from "../components/Navigation";
+import ReviewsStarsLeft from "../components/ReviewsStarsLeft";
+import ReviewsStarsRight from "../components/ReviewsStarsRight";
 
 import { useState } from 'react';
 // Redefine BookingType enum here to avoid importing server-side model on client
@@ -40,12 +42,16 @@ export default function Contact() {
     <>
       <main>
         <Navigation />
-        <div className="flex flex-col items-center justify-center min-h-[60vh] py-10">
+
+        <div className="flex flex-col items-center justify-center min-h-[60vh] py-10 px-12 sm:px-0 w-full">
+               
+        <ReviewsStarsLeft />
+        <ReviewsStarsRight />
           <h1 className="text-3xl font-bold mb-6 text-white mt-10">Contact Us</h1>
           <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to contact us with any questions. If you would like
             to get a quote for a booking, please use the Booking Form (top right) instead. You can use this if you would like to make a booking without using the quote generator, for example you are outside the UK or need a custom quote.
           </p>
-          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4 border-8" style={{ borderColor: '#dfb722' }}>
+          <form onSubmit={handleSubmit} className="relative bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4 border-8" style={{ borderColor: '#dfb722' }}>
             <input
               type="text"
               name="name"
@@ -84,7 +90,7 @@ export default function Contact() {
           </form>
         </div>
 
-                 <style>{`
+        <style>{`
           @keyframes shine {
             0% { background-position: -120% 0; }
             100% { background-position: 220% 0; }
@@ -100,65 +106,11 @@ export default function Contact() {
             filter: drop-shadow(0 0 2px #fffbe6) drop-shadow(0 0 4px #dfb722);
           }
         `}</style>
-        
 
-        
-          
-                 <div style={{
-          position: 'absolute',
-          left: 0,
-          top: '5rem',
-          bottom: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2.2rem',
-          zIndex: 40,
-          pointerEvents: 'none',
-        }}>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.85, marginLeft: '0.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.5rem', opacity: 0.7, marginLeft: '1.2rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.8rem', opacity: 0.6, marginLeft: '0.8rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.5, marginLeft: '1.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginLeft: '1.5rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.85, marginLeft: '1.2rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.6rem', opacity: 0.45, marginLeft: '0.7rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.55, marginLeft: '1.1rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.35, marginLeft: '1.6rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '2.1rem', opacity: 0.75, marginLeft: '0.9rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.4rem', opacity: 0.4, marginLeft: '1.3rem'}}>&#10022; &#10022; </span>
-          <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.5, marginLeft: '0.6rem'}}>&#10022; &#10022; </span>
-       
-        </div>
-
-           <div style={{
-          position: 'absolute',
-          right: 0,
-          top: '4rem',
-          bottom: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2.2rem',
-          zIndex: 1,
-          alignItems: 'flex-end',
-          pointerEvents: 'none',
-        }}>
-          <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.7, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.3rem', opacity: 0.85, marginRight: '0.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.5, marginRight: '1.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.6, marginRight: '0.8rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.2rem', opacity: 0.3, marginRight: '1.5rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.2rem', opacity: 0.85, marginRight: '1.2rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.6rem', opacity: 0.45, marginRight: '0.7rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.9rem', opacity: 0.55, marginRight: '1.1rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.3rem', opacity: 0.35, marginRight: '1.6rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '2.1rem', opacity: 0.75, marginRight: '0.9rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.4rem', opacity: 0.4, marginRight: '1.3rem'}}>&#10022; &#10022;</span>
-          <span className="shiny-star" style={{fontSize: '1.7rem', opacity: 0.5, marginRight: '0.6rem'}}>&#10022; &#10022;</span>
-
-
-        </div>
-        
       </main>
+      <footer className="bg-black text-white p-4 text-center bottom-0" id="footer">
+        <p id="footer-text">&copy; {new Date().getFullYear()} Mr and Mrs Jones Duo. All rights reserved. Photography by Andy Ingram</p>
+      </footer>
     </>
   );
 }
