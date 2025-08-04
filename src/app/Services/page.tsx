@@ -61,7 +61,7 @@ export default function About() {
 
 
                       </p>
-                        <ul className="list-disc text-white list-outside mb-6 text-xl ml-10">
+                        <ul className="list-disc text-white list-outside mb-6 text-xl ml-10 space-y-4">
                             <li>Pre-ceremony music</li>
                             <li>Background (DJ service) music from your own playlist or an appropriate one of our choice</li>
                             <li>Ceremony music</li>
@@ -75,7 +75,7 @@ export default function About() {
                    
                 </div>
 
-                 <div className="ml-12 mt-0">
+                 <div className="ml-12 mt-3">
                     <Image
                         src="/WEDDING.jpg"
                         alt="Sarah and Ben playing together (lol)"

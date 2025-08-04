@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Navigation } from "./components/Navigation";
 import BannerVisibility from "./components/bannerVisibility";
+import WeddingHeading from "./components/WeddingHeading";
 
 import AnalyticsUpdaterWrapper from "./components/AnalyticsUpdaterWrapper";
 
@@ -33,8 +34,7 @@ export default function Home() {
               boxShadow: '0 2px 16px 0 rgba(0,0,0,0.18)',
             }}
           >
-            <span className="homepage-hero-title"
-              style={{
+            <WeddingHeading variant="sub" style={{
               fontSize: '2.7rem',
               fontWeight: 700,
               color: '#fff',
@@ -44,10 +44,9 @@ export default function Home() {
               letterSpacing: '0.04em',
               textShadow: '0 0 12px #b8860b, 0 2px 8px #000, 0 0 2px #fff',
               filter: 'drop-shadow(0 0 6px #dfb722)',
-            }}
-          >
-            Suffolk Based Act
-          </span>
+            }}>
+              <span className="homepage-hero-title">Suffolk Based Act</span>
+            </WeddingHeading>
           <span className="homepage-hero-sub"
             style={{
               fontSize: '1.45rem',
@@ -201,46 +200,59 @@ export default function Home() {
         {/* Fixed banners only when reviews section is in view */}
       
  
-        <h2 className="text-4xl font-bold mb-4">Client Reviews:</h2>
+        <WeddingHeading variant="sub" className="text-4xl font-bold mb-4">
+          <h2>Client Reviews:</h2>
+        </WeddingHeading>
 
-        <h3 className="text-2xl font-bold mt-20">Lauren H</h3>
+        <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+          <h3>Lauren H</h3>
+        </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
           What a duo!! They are playing at the Kings head Stutton over the summer and we love having them there! Great music, fantastic singing and good vibes!
           What a team!
         </p>
         {/* Add more content/components here as needed */}
 
-        <h3 className="text-2xl font-bold mt-20">Steve D</h3>
+        <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+          <h3>Steve D</h3>
+        </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
           Sarah and Ben played for our wedding ceremony and at our prosecco reception right after in May 2025. They were a perfect accompaniment to our day - they were faultless and really added a special springtime touch to the whole day. They learned not one but four requests for our ceremony and played them beautifully! They also moved from indoors to outdoors for the reception without a hitch. We can&#39;t recommend them enough and only regret we haven&#39;t been able to source footage of their music from our guests to better remember them by! Thanks so much for being a part of our day, it wouldn&#39;t have been the same without the pair of you adding the music ❤️
         </p>
 
-        <h3 className="text-2xl font-bold mt-20">Sarah M</h3>
+        <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+          <h3>Sarah M</h3>
+        </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
           Fantastic couple, great voices and hit exactly the right vibe for the party.
 
         Everyone commented how good they were
             </p>
 
-           <h3 className="text-2xl font-bold mt-20">Libby W</h3>
+           <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+             <h3>Libby W</h3>
+           </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
           They were absolutely wonderful! Goodness they were such a talented couple! I will be recommending anyone that needs a duo to look them up! 
         </p>
 
-        <h3 className="text-2xl font-bold mt-20">Natalie H</h3>
+        <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+          <h3>Natalie H</h3>
+        </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
           Just returned home after the most amazing two weeks in Mallorca where I was honoured to hear the music from Sarah and Ben for the first time (it won’t be last either!).  Their music is beautiful and we looked forward to hearing it every evening.  Sarah and Ben sung and played a requested song, which meant so much to us, you guys did it justice and we can’t thank you enough.  Sarah is one very talented singer and Ben is an incredible musician.  You are both stars and you made the holiday one to remember.  Not only were they amazing entertainment (a 10 out of 10 from me) but they were very lovely people who are now my friends. I can’t wait to hear them play again.  You guys are fabulous and you both have an incredible future ahead of you xx
         </p>
-        <h3 className="text-2xl font-bold mt-20">Robin N</h3>
+        <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+          <h3>Robin N</h3>
+        </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
           From the moment my wife and I first heard Sarah and Ben on our cruise on Britannia we fell in love with their music. Sarah&#39;s voice has a gorgeous tone and pure quality. Ben&#39;s playing is brilliant such a variety of material. I bought one of their CD&#39;s after their set and we got talking and they are a really lovely genuine couple. They became our go-to evening entertainment.
         </p>
 
 
-        <h3 className="text-2xl font-bold mt-20">
-          Emma Q
-
-        </h3>
+        <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+          <h3>Emma Q</h3>
+        </WeddingHeading>
 
         <p className="max-w-2xl text-xl text-center">
 
@@ -248,46 +260,41 @@ export default function Home() {
           Huge thanks to Sarah and Ben xx 
         </p>
 
-                  <h3 className="text-2xl font-bold mt-20">
-          Dave G
-
-        </h3>
+                  <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+                    <h3>Dave G</h3>
+                  </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
 
           Saw Mr and Mrs Jones on the recent Britannia Cruise and was very impressed. The acoustic playing was sublime, coupled with some beautiful vocals. The perfect music to compliment the ambience of the ship’s atrium. Could kick myself for not picking up a copy of the CD (saw a sign saying it was available, but forgot to follow through!) - but will definitely hunt a copy down.
         </p>
 
-                 <h3 className="text-2xl font-bold mt-20">
-          Gareth L
-
-        </h3>
+                 <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+                   <h3>Gareth L</h3>
+                 </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
 
           My customers loved it & we would love to have you back again! Sarah you have an amazing voice & Ben, you are an incredibly talented Guitarist!! Thank you for doing the gig, I also know quite a few other landlords in the area & I`m very happy to recommend you to other venues!
         </p>
 
-             <h3 className="text-2xl font-bold mt-20">
-          Drax Energy Solutions
-
-        </h3>
+             <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+               <h3>Drax Energy Solutions</h3>
+             </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
 
           It was a pleasure to have you both at our summer social, we had so much great feedback about how great you guys were which is fab!
           We would definitely love to have you back at the next event so will keep your details to hand! 
         </p>
-                   <h3 className="text-2xl font-bold mt-20">
-          Matthew F
-
-        </h3>
+                   <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+                     <h3>Matthew F</h3>
+                   </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
 
           Stunning vocals and guitar playing and a great range of music. Will definitely be looking out for future performances.
         </p>
 
-                  <h3 className="text-2xl font-bold mt-20">
-          Lynsey S
-
-        </h3>
+                  <WeddingHeading variant="sub" className="text-2xl font-bold mt-20">
+                    <h3>Lynsey S</h3>
+                  </WeddingHeading>
         <p className="max-w-2xl text-xl text-center">
 
           Sarah and Ben were great and such lovely people too! thank you!

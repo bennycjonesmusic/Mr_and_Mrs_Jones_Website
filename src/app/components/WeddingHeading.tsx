@@ -6,9 +6,10 @@ interface WeddingHeadingProps {
   children: React.ReactNode;
   variant?: 'main' | 'sub' | 'section';
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export default function WeddingHeading({ children, variant = 'main', className = '' }: WeddingHeadingProps) {
+export default function WeddingHeading({ children, variant = 'main', className = '', style }: WeddingHeadingProps) {
   return (
     <>
       <style jsx>{`
@@ -44,7 +45,7 @@ export default function WeddingHeading({ children, variant = 'main', className =
           filter: drop-shadow(0 0 4px #dfb722);
         }
       `}</style>
-      <div className={`wedding-${variant === 'main' ? 'heading' : variant === 'sub' ? 'subheading' : 'section-title'} ${className}`}>
+      <div className={`wedding-${variant === 'main' ? 'heading' : variant === 'sub' ? 'subheading' : 'section-title'} ${className}`} style={style}>
         {children}
       </div>
     </>
