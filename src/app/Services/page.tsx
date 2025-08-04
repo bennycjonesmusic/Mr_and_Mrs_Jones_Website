@@ -11,8 +11,12 @@ export default function About() {
             <Navigation />
 
             <section className="flex items-start mt-20 p-8 text-white text-xl">
+
+              
                 <div className="max-w-2xl text-left">
-                    <h2 className="text-3xl font-bold mb-6 text-center">About Mr and Mrs Jones Duo</h2>
+
+                        <h2 className="text-3xl font-bold mb-6 text-center">About Mr and Mrs Jones Duo</h2>
+                  
                     <p className="mb-6">
                         Sarah and Ben met in 2018 when they were matched as a duo for a P&O ferry gig. It was during that gig they became a couple, and have been together ever since professionally and otherwise! They spent many years performing on various cruise ships around the world, including working for companies such as P&O, NCL and MSC. They retired from the cruise industry in January 2025, and have recently been performing at various venues and events throughout the UK. They are now based in Suffolk and have very quickly become a popular act in the area.
                     </p>
@@ -32,6 +36,40 @@ export default function About() {
                         className="rounded-lg shadow-lg object-cover"
                     />
                 </div>
+            </section>
+
+
+        <h2 className="text-4xl font-bold mb-6 text-center text-white mt-20">What We Offer</h2>
+
+             <section className="flex items-start mt-20 p-8 text-white text-xl">
+                
+
+                   <div className="max-w-2xl text-left">
+                    <h3 className= "text-white text-center text-4xl">Wedding Package</h3>
+
+                       
+                    <p className="mb-6 text-2xl text-center">
+                   
+                     <br />For your wedding we offer a tailored package to suit your needs. It can consist of any of the following:
+
+
+                      </p>
+                        <ul className="list-disc text-white list-outside mb-6 text-xl ml-10">
+                            <li>Pre-ceremony music</li>
+                            <li>Background (DJ service) music from your own playlist or an appropriate one of our choice</li>
+                            <li>Ceremony music</li>
+                            <li>Drinks reception music</li>
+                            <li>Wedding breakfast music</li>
+                            <li>Evening entertainment</li>
+                            <li>We can also learn requests, whether it&apos;s for your first dance or just a song that is special to you.</li>
+                            <li>Due to our extensive repertoire and lack of reliance on technology, we can adapt our setlist on the fly, and usually take requests in the moment</li>
+
+                            </ul>
+                   
+                </div>
+
+
+
             </section>
 
             </main>

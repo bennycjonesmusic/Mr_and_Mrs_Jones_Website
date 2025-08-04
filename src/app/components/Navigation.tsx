@@ -111,7 +111,7 @@ export function Navigation() {
         <div className="hidden lg:flex flex-1 flex-row items-center w-full relative">
           <ul className="flex space-x-10 items-center m-0 p-0 mx-auto">
             <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
-            <li><Link href="/about" className="text-white hover:text-gray-300">About</Link></li>
+            <li><Link href="/Services" className="text-white hover:text-gray-300">Services</Link></li>
             <li><Link href="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
             <li><Link href="/Gallery" className="text-white hover:text-gray-300">Gallery</Link></li>
             <li><Link href="/Videos" className="text-white hover:text-gray-300">Videos</Link></li>
@@ -137,8 +137,8 @@ export function Navigation() {
             <div className="flex-1 flex flex-col justify-center w-full max-w-xs mx-auto">
               <ul className="flex flex-col gap-4 text-2xl w-full">
                 <li><Link href="/" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Home</Link></li>
-                <li><Link href="/about" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>About</Link></li>
-                <li><Link href="/contact" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Contact</Link></li>
+                <li><Link href="/Services" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Services</Link></li>
+                <li><Link href="/Contact" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Contact</Link></li>
                 <li><Link href="/Gallery" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Gallery</Link></li>
                 <li><Link href="/Videos" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Videos</Link></li>
                 <li><Link href="/Book" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Booking Form</Link></li>

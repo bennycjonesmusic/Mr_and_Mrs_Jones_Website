@@ -210,10 +210,17 @@ export default function Home() {
         </p>
         {/* Add more content/components here as needed */}
 
-        <h3 className="text-2xl font-bold mt-20">Melissa W</h3>
+        <h3 className="text-2xl font-bold mt-20">Steve D</h3>
         <p className="max-w-2xl text-xl text-center">
           Sarah and Ben played for our wedding ceremony and at our prosecco reception right after in May 2025. They were a perfect accompaniment to our day - they were faultless and really added a special springtime touch to the whole day. They learned not one but four requests for our ceremony and played them beautifully! They also moved from indoors to outdoors for the reception without a hitch. We can&#39;t recommend them enough and only regret we haven&#39;t been able to source footage of their music from our guests to better remember them by! Thanks so much for being a part of our day, it wouldn&#39;t have been the same without the pair of you adding the music ❤️
         </p>
+
+        <h3 className="text-2xl font-bold mt-20">Sarah M</h3>
+        <p className="max-w-2xl text-xl text-center">
+          Fantastic couple, great voices and hit exactly the right vibe for the party.
+
+        Everyone commented how good they were
+            </p>
 
            <h3 className="text-2xl font-bold mt-20">Libby W</h3>
         <p className="max-w-2xl text-xl text-center">
