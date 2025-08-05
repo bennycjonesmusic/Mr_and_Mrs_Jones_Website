@@ -11,7 +11,7 @@ export default function About() {
             <main>
             <Navigation />
 
-            <WeddingFrame className="flex items-start mt-20 text-white text-xl">
+            <WeddingFrame className="flex flex-col lg:flex-row lg:items-start mt-20 text-white text-xl gap-8">
 
               
                 <div className="max-w-2xl text-left">
@@ -30,13 +30,13 @@ export default function About() {
                         Sarah’s gentle voice carries a timbre reminiscent of Emmy Lou Harris or Karen Carpenter, while Ben’s guitar style is influenced by artists like Tommy Emmanuel, James Taylor, and Adam Rafferty. He specializes in fingerstyle playing, allowing him to perform multiple parts simultaneously. This combination produces a surprisingly big sound for just two performers.
                     </p>
                 </div>
-                <div className="ml-12 mt-15">
+                <div className="flex justify-center lg:ml-12 lg:mt-15">
                     <Image
                         src="/both_playing.jpg"
                         alt="Sarah and Ben playing together (lol)"
                         width={3694}
                         height={2368}
-                        className="rounded-lg shadow-lg object-cover max-w-2xl"
+                        className="rounded-lg shadow-lg object-cover max-w-2xl w-full"
                     />
                 </div>
             </WeddingFrame>
@@ -46,7 +46,7 @@ export default function About() {
           <h2>What We Offer</h2>
         </WeddingHeading>
 
-             <WeddingFrame className="flex items-start mt-20 text-white text-xl">
+             <WeddingFrame className="flex flex-col lg:flex-row lg:items-start mt-20 text-white text-xl gap-8">
                 
 
                    <div className="max-w-2xl text-left">
@@ -74,13 +74,13 @@ export default function About() {
                    
                 </div>
 
-                 <div className="ml-12 mt-3">
+                 <div className="flex justify-center lg:ml-12 lg:mt-3">
                     <Image
                         src="/WEDDING.jpg"
                         alt="Sarah and Ben playing together (lol)"
                         width={3694}
                         height={2368}
-                        className="rounded-lg shadow-lg object-cover max-w-2xl"
+                        className="rounded-lg shadow-lg object-cover max-w-2xl w-full"
                     />
                 </div>
 
@@ -88,7 +88,7 @@ export default function About() {
 
             </WeddingFrame>
 
-            <WeddingFrame className="flex items-start mt-20 text-white text-xl">
+            <WeddingFrame className="flex flex-col lg:flex-row lg:items-start mt-20 text-white text-xl gap-8">
                 
                 <div className="max-w-2xl text-left">
                     <WeddingHeading variant="sub" className="text-white text-center text-4xl">
@@ -110,18 +110,18 @@ export default function About() {
                     </ul>
                 </div>
 
-                <div className="ml-12 mt-3">
+                <div className="flex justify-center lg:ml-12 lg:mt-3">
                     <Image
                         src="/country.jpg"
                         alt="Sarah and Ben performing country music"
                         width={3694}
                         height={2368}
-                        className="rounded-lg shadow-lg object-cover max-w-2xl"
+                        className="rounded-lg shadow-lg object-cover max-w-2xl w-full"
                     />
                 </div>
             </WeddingFrame>
 
-            <WeddingFrame className="flex items-start mt-20 text-white text-xl">
+            <WeddingFrame className="flex flex-col lg:flex-row lg:items-start mt-20 text-white text-xl gap-8">
                 
                    <div className="max-w-2xl text-left">
                     <WeddingHeading variant="sub" className="text-white text-center text-4xl">
@@ -148,13 +148,13 @@ export default function About() {
                    
                 </div>
 
-                 <div className="ml-12 mt-3">
+                 <div className="flex justify-center lg:ml-12 lg:mt-3">
                     <Image
                         src="/corporate.jpg"
                         alt="Sarah and Ben performing at a corporate event"
                         width={3694}
                         height={2368}
-                        className="rounded-lg shadow-lg object-cover relative max-w-2xl"
+                        className="rounded-lg shadow-lg object-cover relative max-w-2xl w-full"
                     />
                 </div>
             </WeddingFrame>
