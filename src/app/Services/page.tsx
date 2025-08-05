@@ -36,7 +36,7 @@ export default function About() {
                         alt="Sarah and Ben playing together (lol)"
                         width={3694}
                         height={2368}
-                        className="rounded-lg shadow-lg object-cover"
+                        className="rounded-lg shadow-lg object-cover max-w-2xl"
                     />
                 </div>
             </WeddingFrame>
@@ -62,14 +62,13 @@ export default function About() {
 
                       </p>
                         <ul className="list-disc text-white list-outside mb-6 text-xl ml-10 space-y-4">
-                            <li>Pre-ceremony music</li>
                             <li>Background (DJ service) music from your own playlist or an appropriate one of our choice</li>
                             <li>Ceremony music</li>
                             <li>Drinks reception music</li>
                             <li>Wedding breakfast music</li>
                             <li>Evening entertainment</li>
                             <li>We can also learn requests, whether it&apos;s for your first dance or just a song that is special to you.</li>
-                            <li>Due to our extensive repertoire and lack of reliance on technology, we can adapt our setlist on the fly, and usually take requests in the moment</li>
+                  
 
                             </ul>
                    
@@ -81,12 +80,83 @@ export default function About() {
                         alt="Sarah and Ben playing together (lol)"
                         width={3694}
                         height={2368}
-                        className="rounded-lg shadow-lg object-cover"
+                        className="rounded-lg shadow-lg object-cover max-w-2xl"
                     />
                 </div>
 
 
 
+            </WeddingFrame>
+
+            <WeddingFrame className="flex items-start mt-20 text-white text-xl">
+                
+                <div className="max-w-2xl text-left">
+                    <WeddingHeading variant="sub" className="text-white text-center text-4xl">
+                      <h3>Country Themed Party</h3>
+                    </WeddingHeading>
+
+                    <p className="mb-6 text-2xl text-center">
+                        <br />Lets get you yee-hawing! Tailored package includes:
+                    </p>
+                    
+                    <ul className="list-disc text-white list-outside mb-6 text-xl ml-10 space-y-4">
+                        <li>Classic country hits from Johnny Cash, Dolly Parton, and Willie Nelson</li>
+                        <li>Modern country favorites from artists like Chris Stapleton and Lainey Wilson</li>
+                        <li>Organic acoustic sound consisting of two acoustic guitars, two voices and a stomp box</li>
+                        <li>Country background music in-between sets and additional country DJ set after we have finished playing</li>
+                        <li>We can also learn requests, whether it&apos;s for your first dance or just a song that is special to you.</li>
+                        <li>Billy Strings, Chet Atkins and Jerry Reed inspired guitar licks</li>
+                        <li>Due to our extensive repertoire and lack of reliance on technology, we can adapt our setlist on the fly, and sometimes take requests in the moment.</li>
+                    </ul>
+                </div>
+
+                <div className="ml-12 mt-3">
+                    <Image
+                        src="/country.jpg"
+                        alt="Sarah and Ben performing country music"
+                        width={3694}
+                        height={2368}
+                        className="rounded-lg shadow-lg object-cover max-w-2xl"
+                    />
+                </div>
+            </WeddingFrame>
+
+            <WeddingFrame className="flex items-start mt-20 text-white text-xl">
+                
+                   <div className="max-w-2xl text-left">
+                    <WeddingHeading variant="sub" className="text-white text-center text-4xl">
+                      <h3>Corporate Or Party</h3>
+                    </WeddingHeading>
+
+                       
+                    <p className="mb-6 text-2xl text-center">
+                   
+                     <br />Professional entertainment for your corporate event or private party:
+
+
+                      </p>
+                        <ul className="list-disc text-white list-outside mb-6 text-xl ml-10 space-y-4">
+                            <li>Background music for networking events and receptions</li>
+                            <li>Upbeat party favorites to get everyone dancing</li>
+                            <li>Professional presentation suitable for corporate environments</li>
+                            <li>Customizable setlist to match your event&apos;s atmosphere</li>
+                            <li>Classic rock, folk, pop, and contemporary hits</li>
+                            <li>Flexible performance duration to suit your schedule</li>
+                            <li>Professional sound equipment included for venues up to 200 guests</li>
+
+                            </ul>
+                   
+                </div>
+
+                 <div className="ml-12 mt-3">
+                    <Image
+                        src="/corporate.jpg"
+                        alt="Sarah and Ben performing at a corporate event"
+                        width={3694}
+                        height={2368}
+                        className="rounded-lg shadow-lg object-cover relative max-w-2xl"
+                    />
+                </div>
             </WeddingFrame>
 
             </main>
