@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Mr and Mrs Jones Duo",
     images: [
       {
-        url: "/promo_new.jpg",
+        url: "https://mrandmrsjonesduo.co.uk/promo_new.jpg",
         width: 1200,
         height: 630,
         alt: "Mr and Mrs Jones Duo Promo"
