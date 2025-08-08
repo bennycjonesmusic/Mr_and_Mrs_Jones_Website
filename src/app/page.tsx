@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import { Navigation } from "./components/Navigation";
 import BannerVisibility from "./components/bannerVisibility";
 import WeddingHeading from "./components/WeddingHeading";
