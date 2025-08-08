@@ -5,7 +5,7 @@ import ReviewsStarsRight from "../components/ReviewsStarsRight";
 
 import { useState } from 'react';
 // Redefine BookingType enum here to avoid importing server-side model on client
-export enum BookingType {
+enum BookingType {
   Booking = 'Booking',
   Contact = 'Contact',
 }

@@ -3,7 +3,7 @@ export enum BookingType {
   Contact = 'Contact',
 }
 
-import mongoose, { Schema, Document, models, model } from 'mongoose';
+import { Schema, Document, models, model } from 'mongoose';
 
 export interface IBooking extends Document {
   name: string;
