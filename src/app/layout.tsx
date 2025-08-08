@@ -63,10 +63,10 @@ export const metadata: Metadata = {
     siteName: "Mr and Mrs Jones Duo",
     images: [
       {
-        url: "https://mrandmrsjonesduo.co.uk/promo_new.jpg",
+        url: "https://mrandmrsjonesduo.co.uk",
         width: 1200,
         height: 630,
-        alt: "Mr and Mrs Jones Duo Promo"
+        alt: "Mr and Mrs Jones Duo Homepage"
       }
     ],
     locale: "en_GB",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: "Mr and Mrs Jones Duo | Suffolk Based Live Music",
     description:
       "Live acoustic duo for weddings, parties, and events in Suffolk and beyond. Two guitars, two voices, no backing tracks.",
-    images: ["https://mrandmrsjonesduo.co.uk/promo_new.jpg"]
+    images: ["https://mrandmrsjonesduo.co.uk"]
   },
   icons: {
     icon: "/favicon.ico",
