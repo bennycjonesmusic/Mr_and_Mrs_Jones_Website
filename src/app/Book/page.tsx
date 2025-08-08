@@ -184,7 +184,7 @@ export default function Booking() {
           <ReviewsStarsLeft />
           <ReviewsStarsRight />
           <h1 className="text-3xl font-bold mb-6 text-white mt-10">Booking Form</h1>
-          <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to generate a quote for a booking. This will send us a quote which we can then accept if we are available. Please note this quote is just an estimate based on 3 x 45 minute sets, and gives you an idea of pricing. Extras such as overnight stays, long distance travel and DJ services may incur additional costs. </p>
+          <p className="text-xl text-white mb-8 max-w-4xl">Please use this form to generate a quote for a booking. This will send us a quote which we can then reply back to you via email if we are available. Please note this quote is just an estimate based on 3 x 45 minute sets, and gives you an idea of pricing. Extras such as overnight stays, long distance travel and DJ services may incur additional costs. </p>
           <form onSubmit={handleSubmit} className="relative bg-white rounded-lg shadow-md p-8 w-full max-w-lg flex flex-col gap-4 border-8" style={{ borderColor: '#dfb722' }}>
             <label className="font-semibold">Event Type</label>
             <select

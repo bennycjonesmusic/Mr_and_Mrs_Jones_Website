@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import mongoose from 'mongoose';
 import Booking, { IBooking, BookingType } from '../../models/Booking';
+import BookingRateLimit from '../../models/BookingRateLimit';
 import { requireApiKey } from '../utils/authMiddleware';
 
 // Ensure mongoose is connected
@@ -24,9 +25,30 @@ export async function GET(req: NextRequest) {
 // POST: Create a new booking
 export async function POST(req: NextRequest) {
   try {
+    // Get IP address
+  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+    // Find or create rate limit record
+    let rateLimit = await BookingRateLimit.findOne({ ip });
+    const now = new Date();
+    if (!rateLimit) {
+      rateLimit = new BookingRateLimit({ ip, count: 0, lastReset: now });
+    } else {
+      // Reset count if 24hrs passed
+      if (now.getTime() - rateLimit.lastReset.getTime() > 24 * 60 * 60 * 1000) {
+        rateLimit.count = 0;
+        rateLimit.lastReset = now;
+      }
+    }
+    if (rateLimit.count >= 2) {
+      return NextResponse.json({ error: 'Rate limit exceeded: Only 2 bookings allowed per 24 hours per IP.' }, { status: 429 });
+    }
+    // Proceed with booking
     const data = await req.json();
     const booking = new Booking(data);
     await booking.save();
+    // Update rate limit count
+    rateLimit.count += 1;
+    await rateLimit.save();
     return NextResponse.json(booking, { status: 201 });
   } catch (err) {
     return NextResponse.json({ error: 'Failed to create booking' }, { status: 400 });

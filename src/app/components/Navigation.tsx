@@ -138,7 +138,7 @@ export function Navigation() {
               <ul className="flex flex-col gap-4 text-2xl w-full">
                 <li><Link href="/" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Home</Link></li>
                 <li><Link href="/Services" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Services</Link></li>
-                <li><Link href="/Contact" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Contact</Link></li>
+                <li><Link href="/contact" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Contact</Link></li>
                 <li><Link href="/Gallery" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Gallery</Link></li>
                 <li><Link href="/Videos" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Videos</Link></li>
                 <li><Link href="/Book" className="block w-full text-center text-white hover:text-gray-300 py-4" onClick={() => setMobileOpen(false)}>Booking Form</Link></li>
