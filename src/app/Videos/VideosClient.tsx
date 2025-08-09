@@ -83,17 +83,17 @@ export default function VideosClient() {
             <div className="flex flex-row justify-center items-center w-full mt-2 gap-8">
               <button
                 onClick={prevVideo}
-                className="text-5xl text-[#dfb722] px-6 py-3 rounded-full hover:bg-[#dfb722] hover:text-black transition"
+                className="text-5xl text-[#dfb722] px-6 py-3 rounded-full hover:bg-[#dfb722] hover:text-black transition flex items-center justify-center"
                 aria-label="Previous Video"
               >
-                &#8592;
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#dfb722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
               </button>
               <button
                 onClick={nextVideo}
-                className="text-5xl text-[#dfb722] px-6 py-3 rounded-full hover:bg-[#dfb722] hover:text-black transition"
+                className="text-5xl text-[#dfb722] px-6 py-3 rounded-full hover:bg-[#dfb722] hover:text-black transition flex items-center justify-center"
                 aria-label="Next Video"
               >
-                &#8594;
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#dfb722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
             </div>
           </div>
