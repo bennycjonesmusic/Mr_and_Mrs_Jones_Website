@@ -134,6 +134,9 @@ bottom: 0 !important;
   .homepage-hero-sub { font-size: 1.2rem !important; }
   .homepage-hero-tag { font-size: 1.1rem !important; }
   .homepage-hero-h1 { font-size: 7vw !important; }
+  .homepage-hero-text-container {
+    bottom: min(2em, 8vw) !important;
+  }
 }
 @import "tailwindcss";
 
